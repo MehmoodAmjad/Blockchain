@@ -1,4 +1,4 @@
-package task1
+package main
 
 import (
 	"fmt"
@@ -20,7 +20,7 @@ func printStruct(pers Person) {
 	fmt.Println("=========================")
 }
 
-func task1() {
+func main() {
 	var pers1 Person
 	var pers2 Person
 	// Pers1 specification

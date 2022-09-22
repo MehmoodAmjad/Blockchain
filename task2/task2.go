@@ -1,4 +1,4 @@
-package task2
+package main
 
 import "fmt"
 
@@ -16,8 +16,11 @@ func printCompany() {
 	emp1 := employee{"Amir", 80000, "Full-Stack Developer"}
 	emp2 := employee{"Mehmood", 90000, "Backend Developer"}
 	emp3 := employee{"Faiez", 60000, "Frontend Developer"}
-	emplys := []employee{emp1, emp2, emp3}
+	emp4 := employee{"Abu Bakr", 60000, "Frontend Developer"}
+
+	emplys := []employee{emp1, emp2, emp3, emp4}
 	comp := company{"Tetra", emplys}
+
 	fmt.Println("=====================")
 	fmt.Println("Company : ", comp.companyName)
 	fmt.Println("=====================")
@@ -29,4 +32,7 @@ func printCompany() {
 
 		fmt.Println("=====================")
 	}
+}
+func main() {
+	printCompany()
 }
